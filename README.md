@@ -14,6 +14,6 @@
 	2) Dentro do diretórior raiz executar o comando 'rails s' para iniciar o servidor localhost
 
 #Testes 
-	3) Dentro do diretório raiz executar o comando 'rake spec' para executar os testes unitarios 
+	3) Dentro do diretório raiz executar o comando 'rake spec' para executar os testes unitários 
 
 
