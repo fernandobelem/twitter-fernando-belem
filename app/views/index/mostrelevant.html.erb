@@ -1,0 +1,4 @@
+<p>Most Relevant</p>
+<%= link_to 'Show JSON', 'showjson', :method => :get, class: "btn btn-primary", style: "float:right" %>
+<%= render partial: "options", :locals => {:path => 'mostrelevant'} %>
+<%= render partial: "card" %>

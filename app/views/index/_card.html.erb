@@ -1,0 +1,26 @@
+   <% @sorted_tweets.each do |r| %>
+
+        <div class="col-sm-4 card-box">
+            <div class="card">
+                <div class="card-image">
+                    <img  height="10%" width="10%" src="https://image.flaticon.com/icons/png/512/8/8800.png">
+                    <span><%= r['user']['name']%> </span>
+                    <p class="small-user-text"><small>@<%= r['user']['screen_name']%></small></p>
+
+                </div>
+                
+                <div class="card-content">
+
+                    <p> <%= link_to r['text'], tweet_path(r) %> </p>
+                    <p class="small-user-text" ><small><%= r['created_at'].in_time_zone(Time.zone)%></small></p>
+                </div>
+                
+                <div class="card-action">
+                  <p class="tweetP"><b>Followers: </b> <%= r['user']['followers_count']%></p>
+                  <p class="tweetP"><b>Retweets: </b> <%= r['retweet_count']%></p>
+                  <p class="tweetP"><b>Favourites: </b> <%= r['favorite_count']%></p>
+                </div>
+            </div>
+        </div>
+
+<% end %>

@@ -1,0 +1,6 @@
+<div class="form-group">
+	<%= form_tag({:controller => "index", :action => "#{path}"}, :method => "get", :class => "index")do %>
+		<%= label_tag "Order by"%>	
+		<%= select_tag :options, options_for_select(@options, params[:options]), onchange: "this.form.submit();"%>
+	<% end %>
+</div>
